@@ -132,12 +132,12 @@
 // console.log(arr3);
 
 // 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-arr6[0] = 100;
-console.log(arr6);
+// const arr6 = [...arr4];
+// arr6[0] = 100;
+// console.log(arr6);
 
 // const arr7 = [...arr4, ...arr5];
 // console.log(arr7);
@@ -148,11 +148,11 @@ console.log(arr6);
 // console.log(arr4);
 
 /**
- * maplやfillterを使った配列の処理
+ * maplやfilterを使った配列の処理
  */
-const nameArr = ["田中", "山田", "じゃけぇ"];
+// const nameArr = ["田中", "山田", "じゃけぇ"];
 // for (let index = 0; index < nameArr.length; index++) {
-//   console.log(nameArr[index]);
+//   console.log(`${index + 1}番目は${nameArr[index]}です`);
 // }
 
 // const nameArr2 = nameArr.map((name)=>{
@@ -160,4 +160,35 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 // })
 // console.log(nameArr2);
 
-nameArr.map((name) => console.log(name));
+// nameArr.map((name) => console.log(`${name}です`));
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumarr = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newNumarr);
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "じゃけぇ") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件 ? 条件がtrueの時 : 条件がfalseの時
+// const val1 = 1 < 0 ? 'trueです' : 'falseです';
+// console.log(val1);
+// const num = 1300;
+
+// const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください'
+// console.log(formattedNum);
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? '100をこえています' : '許容範囲内です';
+// }
+// console.log(checkSum(50, 40));
